@@ -17,18 +17,18 @@ void setup() {
 void loop(){
   int lf = 10;
   Serial.readBytesUntil(lf,myCol,1);
-  if(strcmp(myCol,"r")==0){
+    if(strcmp(myCol,"r")==0){
        digitalWrite(rLed, HIGH);       
        digitalWrite(yLed, LOW);   
        digitalWrite(gLed, LOW);
     }
   
-     if(strcmp(myCol,"y")==0){
+    if(strcmp(myCol,"y")==0){
       digitalWrite(rLed,LOW);
       digitalWrite(yLed,HIGH);
       digitalWrite(gLed,LOW);
     }
-     if(strcmp(myCol,"g")==0){
+    if(strcmp(myCol,"g")==0){
       digitalWrite(rLed,LOW);
       digitalWrite(yLed,LOW);
       digitalWrite(gLed,HIGH);
